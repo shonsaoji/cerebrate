@@ -72,17 +72,17 @@
         <li id="contactFormTab" class="active">
           <div class="row collapse">
             <div class="two columns"><label class="inline">Your Name</label></div>
-            <div class="ten columns"><input type="text" id="yourName" placeholder="Jane Smith" />
+            <div class="ten columns"><input type="text" id="senderName" placeholder="Jane Smith" />
           </div>
           <div class="row collapse">
             <div class="two columns"><label class="inline">Your Email</label></div>
-            <div class="ten columns"><input type="text" id="yourEmail" placeholder="jane@smithco.com" />
+            <div class="ten columns"><input type="text" id="senderEmail" placeholder="jane@smithco.com" />
           </div>
 
           <label>Message</label>
-          <textarea rows="4"></textarea>
+          <textarea rows="4" id="senderMsg"></textarea>
 
-          <button type="submit" class="radius button">Submit</button>
+          <button id="contactBtn" type="submit" class="radius button">Submit</button>
         </li>
 
         <li id="contactPeopleTab">
@@ -203,6 +203,7 @@
   <!-- Included JS Files (Compressed) -->
   <script src="./foundation/javascripts/jquery.js"></script>
   <script src="./foundation/javascripts/foundation.min.js"></script>
+  <script src="./ui/controller.js"></script>
   
   <!-- Initialize JS Plugins -->
   <script src="./foundation/javascripts/app.js"></script>
