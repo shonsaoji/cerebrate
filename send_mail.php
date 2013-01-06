@@ -1,9 +1,10 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
+$name = $_GET['name'];
+$email = $_GET['email'];
 $msg = "You have received an email from $name, email = $email. The message is <br />";
-$msg .= $_POST['msg'];
+$msg .= $_GET['msg'];
 
 
 $to = "shon.saoji@gmail.com";
 mail($email, "Enquiry for cerebrate", $msg);
+
