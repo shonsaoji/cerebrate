@@ -6,5 +6,6 @@ $("#contactBtn").click(function(e) {
 		$("#senderName").val("");
 		$("#senderEmail").val("");
 		$("#senderMsg").val("");
+		alert('Thank you for the enquiry. Your message has been sent!');
 	});
 });
