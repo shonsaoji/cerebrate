@@ -45,18 +45,30 @@
         <li class="right"><a href="/contact.html">Contact Us</a></li>
       </ul>
       <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
-      <div class="row" style="margin-bottom:30px">
-      	<div class="five columns">
-      		<img src="./images/jigsaw.jpg" />
-      	</div>
-      	<div class="seven columns">
-	      <p>
+	<div id="featuredContent">
+      <div class="row" >
+      	<div class="six columns">
 	      	<a href="#"><h1 class='home-banner'> Cerebrate </h1></a>
-	      </p>
-      		<h2>Connecting the dots for you</h2>
+	      	<h4>Connecting the dots for you</h4>
+      	</div>
+      	<div class="six columns">
+      		<img src="./images/jigsaw.jpg" />
       	</div>
 
       </div>
+
+	  <div>
+      	<div class="six columns">
+	      	<a href="#"><h1 class='home-banner'> Cerebrate </h1></a>
+	      	<h4>Connecting the dots for you</h4>
+      	</div>	  </div>
+	  <div>
+      	<div class="six columns">
+	      	<a href="#"><h1 class='home-banner'> Cerebrate </h1></a>
+	      	<h4>Connecting the dots for you</h4>
+      	</div>
+      </div>
+	</div>
     </div>
   </div>
 
@@ -174,5 +186,10 @@
   
   <!-- Initialize JS Plugins -->
   <script src="./foundation/javascripts/app.js"></script>
+  <script type='text/javascript'>
+   $(window).load(function() {
+       $('#featuredContent').orbit({ fluid: '16x6' });
+   });
+</script>
 </body>
 </html>
