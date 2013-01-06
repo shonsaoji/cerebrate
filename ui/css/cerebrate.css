@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+body {
+	background-image: url("/images/linen.png");
+	color: #E6E6E6;
+}
+
+p {
+	font-size: 18px;
+	color: #FFCC66;
+}
+a, label {
+	color: #FFCC66;	
+}
+
+a:hover {
+	color: #ff9900;
+}
+
+.description {
+	text-align: justify;
+	letter-spacing: -1px;	
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #ff9900;	
+}
+
+
+h1.home-banner {
+	font-weight: 200;
+	font-size: 80px;
+	color: #ff9900;
+}
+
+.light {
+	color: #222222;
+}
+
+.tabs dd.active  a{
+	background-color: #666666;
+}
+
