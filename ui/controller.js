@@ -18,6 +18,8 @@ $("#contactBtn").click(function(e) {
 		ret = true;
 	}
 	if(ret) {
+		$("#msgStatus").addClass("alert-box alert");
+		$("#msgStatus").html('Please fill in all the information below. <a href="" class="close">&times;</a>');
 		return;
 	} 
 	$.get("/send_mail.php?name=" + sender_name + "&email=" + sender_email + "&msg=" + sender_msg, function() {
@@ -27,6 +29,8 @@ $("#contactBtn").click(function(e) {
 		$("#senderName").removeClass("error");
 		$("#senderEmail").removeClass("error");
 		$("#senderMsg").removeClass("error");
-		alert('Thank you for the enquiry. Your message has been sent!');
+		$("#msgStatus").removeClass("alert");
+		$("#msgStatus").addClass("alert-box success");
+		$("#msgStatus").html('Thank you for the enquiry. Your message has been sent! <a href="" class="close">&times;</a>');
 	});
 });
