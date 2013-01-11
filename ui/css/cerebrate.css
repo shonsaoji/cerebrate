@@ -7,6 +7,7 @@ body {
 p {
 	font-size: 18px;
 	color: #FFCC66;
+	text-align: justify;
 }
 a, label {
 	color: #FFCC66;	
